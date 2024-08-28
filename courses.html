@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <title>StudentBucket | Courses</title>
+
+  </head>
+  
+  <body class="p-3 mb-2 bg-dark text-white ">
+
+    <!-- NAVBAR STARTS -->
+      <nav class="pb-3 bg-body-dark border-bottom text-light">
+        <div class="container-fluid d-flex flex-wrap">
+          <a href="index.html" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+            <img src="logo1.png" alt="StudentBucket" draggable="false" height="30" width="210"/>
+          </a>
+          <ul class="nav ">
+            <!-- <li class="nav-item "><a href="#" class="nav-link link-body-emphasis px-2 text-white">Login</a></li>
+            <li class="nav-item "><a href="#" class="nav-link link-body-emphasis px-2 text-white">Sign up</a></li>
+            <li class="nav-item "><a href="cart.html" class="nav-link link-body-emphasis px-2 text-white"><i class="fas fa-shopping-cart"></i> Cart</a></li> -->
+            <li class="nav-item "><a href="login.html" class="nav-link link-body-emphasis px-2 text-white"><i class="bi bi-person" style="font-size:large;"></i> Login</a></li>
+            <li class="nav-item "><a href="cart.html" class="nav-link link-body-emphasis px-2 text-white"><i class="bi bi-cart" style="font-size:large;"></i> Cart</a></li>
+          </ul>
+        </div>
+      </nav>
+      <header class="py-3 mb-4 border-bottom">
+        <div class="container-fluid d-flex flex-wrap justify-content-center">
+          <ul class="nav me-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link link-body-emphasis px-2 active text-white" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="courses.html" class="nav-link link-body-emphasis px-2 active text-white" aria-current="page">Courses</a></li>
+            <li class="nav-item"><a href="notes.html" class="nav-link link-body-emphasis px-2 text-white">Notes</a></li>
+            <li class="nav-item"><a href="main.php" class="nav-link link-body-emphasis px-2 text-white" target=”_blank”>Store</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link link-body-emphasis px-2 text-white">Blog</a></li>
+            <li class="nav-item"><a href="contact_us.html" class="nav-link link-body-emphasis px-2 text-white">Contact us</a></li>
+            <li class="nav-item"><a href="about_us.html" class="nav-link link-body-emphasis px-2 text-white">About Us</a></li>
+            <li class="nav-item"><a href="donation.html" class="nav-link link-body-emphasis px-2 text-white">Donate us</a></li>
+          </ul>
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          </form>
+        </div>
+      </header>
+    <!-- NAVBAR ENDS -->
+
+    
+
+    
+
+
+    <!-- BODY STARTS -->
+
+
+
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+
+            <!-- can be updated in future -->
+
+          <!-- </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav> --> 
+
+
+    
+    <!-- FIRST SLIDER STARTS -->
+
+      <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="slide_images/image1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="slide_images/image2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>    
+    <!-- FIRST SLIDER ENDS -->
+
+
+
+    <!-- <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+   -->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BORDER STARTS -->      
+    <div class="py-3"></div>
+    <!-- BORDER ENDS -->
+
+    <!-- BORDER STARTS -->      
+    <div class="py-3"></div>
+    <!-- BORDER ENDS -->
+
+
+
+
+
+
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">All the skills you need in one place!</h2>
+  
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg " >
+            <img src="store_slide/cards1.jpg" alt="">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 text-center" >
+              <a href="" class="text-decoration-none">
+                <h3 class="display-7 fw-bold text-dark">Web Development</h3>
+              </a>
+              <p class="mb-4 text-dark">Learn the basics of web development principles for building web pages.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg " >
+            <img src="store_slide/cards2.jpg" alt="" class="h-75">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 text-center" >
+              <a href="" class="text-decoration-none">
+                <h3 class="display-7 fw-bold text-dark">Computer Science</h3>
+              </a>
+              <p class="mb-4 text-dark">Unlock the secrets of the digital world.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg " >
+            <img src="store_slide/cards6.jpg" alt="" >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 text-center" >
+              <a href="" class="text-decoration-none">
+                <h3 class="display-7 fw-bold text-dark">Communication Skills</h3>
+              </a>
+              <p class="mb-4 text-dark">Effective communication is the bridge between confusion and clarity.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg " >
+            <img src="store_slide/cards3.jpg" alt="">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 text-center" >
+              <a href="" class="text-decoration-none">
+                <h3 class="display-7 fw-bold text-dark">Data Science & AI</h3>
+              </a>
+              <p class="mb-4 text-dark">Explore the depths of human expression and culture.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg " >
+            <img src="store_slide/cards5.jpg" alt="">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 text-center" >
+              <a href="" class="text-decoration-none">
+                <h3 class="display-7 fw-bold text-dark">Test Preparation</h3>
+              </a>
+              <p class="mb-4 text-dark">Let's conquer your tests together.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-light rounded-4 shadow-lg " >
+            <img src="store_slide/cards4.jpg" alt="">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 text-center" >
+              <a href="" class="text-decoration-none">
+                <h3 class="display-7 fw-bold text-dark">Coming Soon</h3>
+              </a>
+              <p class="mb-4 text-dark">Working on new courses, and will be launched soon...</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <section class="bg-light text-body-emphasis">
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h2 class="pb-2 border-bottom border-dark">Course Features</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3  text-body-emphasis">
+          <div class="col d-flex align-items-start">
+            <div class="icon-square d-inline-flex align-items-center justify-content-center fs-1 flex-shrink-0 me-3">
+              <h3><i class="fas fa-video"></i></h3>
+            </div>
+            <div>
+              <h3 class="fs-2 t ">Video Tutorials</h3>
+              <p>Engaging video lessons covering every aspect of your requirement.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <h3><i class="fas fa-laptop-code"></i></h3>
+            </div>
+            <div>
+              <h3 class="fs-2 ">Interactive Exercises</h3>
+              <p>Hands-on exercises to reinforce your learning.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div class="icon-square d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <h3><i class="fas fa-chalkboard-teacher"></i></h3>
+            </div>
+            <div>
+              <h3 class="fs-2 ">Expert Instructors</h3>
+              <p>Learn from industry experts with years of experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <section class="bg-light text-body-emphasis" style="height: 40vh;">
+      <div class="container">
+        <h2 class="pb-2 border-bottom border-dark pt-5">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                What programming languages are covered in the course?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The course primarily focuses on HTML, CSS, JavaScript, and popular frameworks like React and Node.js.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Are there any prerequisites for enrolling in the course?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">No, there are no specific prerequisites. However, basic knowledge of programming concepts would be beneficial.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                How long does it take to complete the course?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">The duration of the course varies depending on your pace of learning, but most students complete it within 3-6 months.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="bg-light text-body-emphasis" >
+      <div class="container ">
+        <div class="p-5 text-center bg-body-tertiary shadow p-3  bg-body-tertiary rounded">
+          <h1 class="text-body-emphasis">Unlock Your Potential Today</h1>
+          <p class="col-lg-8 mx-auto fs-5 text-muted">
+            Start your journey towards becoming a skilled learner with our comprehensive courses.
+          </p>
+          <div class="d-inline-flex gap-2 ">
+            <a href="">
+              <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded" type="button">
+                Enroll Now
+              </button>
+            </a>
+            
+            <!-- <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded" type="button">
+              Enroll Now
+            </button> -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- BORDER STARTS -->      
+        <div class="border-bottom py-3"></div>
+      <!-- BORDER ENDS -->
+
+
+    <!-- BODY ENDS -->
+
+
+
+
+
+    <!-- FOOTER STARTS -->
+      <footer class="bg-body-dark ">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!-- Section: Social media -->
+          <section class="mb-4 bg-body-dark text-center">         <!-- "bg-body-tertiary" to be changed -->                        
+            <!-- Facebook -->
+            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button">
+              <i class="fab link-body-emphasis fa-facebook-square fa-2x text-light"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button">
+              <i class="fab link-body-emphasis  fa-twitter fa-2x text-light"></i>
+            </a>
+
+            <!-- Google -->
+            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+              ><i class="fab link-body-emphasis fa-google fa-2x text-light"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+              ><i class="fab link-body-emphasis fa-instagram fa-2x text-light"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+              ><i class="fab link-body-emphasis fa-linkedin-in fa-2x text-light"></i
+            ></a>
+
+            <!-- Github -->
+            <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github fa-2x text-light"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+          
+          <!-- Section: Text -->
+          <section class="mt-0 mb-5 text-center ">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+              repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum
+              harum corrupti dicta, aliquam sequi voluptate quas.
+            </p>
+          </section>
+          <!-- Section: Text -->
+
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row text-center">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6  mb-md-0 mb-2  col-6 ">
+                <h5 class="text-uppercase">Links a</h5>
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 1</a>
+                  </li>
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 2</a>
+                  </li>
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 3</a>
+                  </li>
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 4</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-md-0  mb-2  col-6 ">
+                <h5 class="text-uppercase">Links b</h5>
+
+                <ul class="list-unstyled ">
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 1</a>
+                  </li>
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 2</a>
+                  </li>
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 3</a>
+                  </li>
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 4</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column--> 
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 col-6 ">
+                <h5 class="text-uppercase">Links c</h5>
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 1</a>
+                  </li>
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 2</a>
+                  </li>
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 3</a>
+                  </li>
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 4</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 mb-4 col-md-6 mb-md-0 col-6 ">
+                <h5 class="text-uppercase">Links d</h5>
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 1</a>
+                  </li>
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 2</a>
+                  </li>
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 3</a>
+                  </li>
+                  <li>
+                    <a class="link-body-emphasis text-decoration-none text-white " href="#!">Link 4</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2020 Copyright:
+          <a class="text-reset fw-bold " href="index.html">StudentBucket</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    <!-- FOOTER ENDS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SCRIPTS STARTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+    <!-- SCRIPTS ENDS -->
+
+  </body>
+</html>

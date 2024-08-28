@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>StudentBucket | Registration</title>
+
+</head>
+
+<body class="p-3 mb-2 bg-dark text-white ">
+
+  <!-- NAVBAR STARTS -->
+  <nav class="pb-3 bg-body-dark border-bottom text-white">
+    <div class="container d-flex flex-wrap">
+      <a href="index.html"
+        class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap" />
+        </svg>
+        <img src="logo1.png" alt="StudentBucket" draggable="false" height="30" width="210" />
+      </a>
+      <ul class="nav ">
+        <!-- <li class="nav-item "><a href="#" class="nav-link link-body-emphasis px-2 text-white">Login</a></li>
+            <li class="nav-item "><a href="#" class="nav-link link-body-emphasis px-2 text-white">Sign up</a></li>
+            <li class="nav-item "><a href="cart.html" class="nav-link link-body-emphasis px-2 text-white"><i class="fas fa-shopping-cart"></i> Cart</a></li> -->
+        <li class="nav-item "><a href="login.html" class="nav-link link-body-emphasis px-2 text-white"><i
+              class="bi bi-person" style="font-size:large;"></i> Login</a></li>
+        <li class="nav-item "><a href="#" class="nav-link link-body-emphasis px-2 text-white"><i class="bi bi-cart"
+              style="font-size:large;"></i> Cart</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+      <ul class="nav me-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link link-body-emphasis px-2 active text-white"
+            aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="courses.html" class="nav-link link-body-emphasis px-2 active text-white"
+            aria-current="page">Courses</a></li>
+        <li class="nav-item"><a href="notes.html" class="nav-link link-body-emphasis px-2 text-white">Notes</a></li>
+        <li class="nav-item"><a href="main.php" class="nav-link link-body-emphasis px-2 text-white" target=”_blank”>Store</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link link-body-emphasis px-2 text-white">Blog</a></li>
+        <li class="nav-item"><a href="contact_us.html" class="nav-link link-body-emphasis px-2 text-white">Contact
+            us</a></li>
+        <li class="nav-item"><a href="about_us.html" class="nav-link link-body-emphasis px-2 text-white">About Us</a>
+        </li>
+      </ul>
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+      </form>
+    </div>
+  </header>
+  <!-- NAVBAR ENDS -->
+
+
+
+
+
+
+  <!-- BODY STARTS -->
+
+  <!-- LOGIN STARTS -->
+  <div class="container content bg-image rounded-3 shadow-2-strong py-5"
+    style="background-image: url('background/4.jpg'); background-position: center; background-size:cover; height: 80vh;">
+    <!-- FORM STARTS -->
+    <div class=" p-5 text-black">
+      <div class="justify-content mt-5">
+        <div class="col-lg-4">
+          <form id="registerForm" method="POST" action="php/register.php">
+            <h2 class="text-center mb-3 text-decoration-underline "
+              style="font-family: Georgia, 'Times New Roman', Times, serif;">Register</h2>
+            <div class="mb-3">
+              <label for="userType" class="form-label">User Type</label>
+              <select id="userType" name="userType" class="form-select" required>
+                <option value="">Select an option</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" id="username" name="username" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+
+            <div class="text-center pb-3">
+              <button type="submit" class="btn btn-dark">Register</button>
+            </div>
+
+            <div class=" text-center " style="text-size-adjust:initial;">
+              Already have a account? <a
+                class="link-body-emphasis text-decoration-none btn btn-outline-dark btn-dark text-light mx-1"
+                href="login.html">LOGIN ACCOUNT</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- FORM ENDS -->
+
+    <!-- BORDER STARTS -->
+    <div class="py-4"></div>
+    <!-- BORDER ENDS -->
+
+  </div>
+  <!-- lOGIN STARTS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- BORDER STARTS -->
+  <div class="border-bottom py-3"></div>
+  <!-- BORDER ENDS -->
+
+
+  <!-- BODY ENDS -->
+
+
+
+
+
+  <!-- FOOTER STARTS -->
+  <footer class="bg-body-dark ">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4 bg-body-dark text-center"> <!-- "bg-body-tertiary" to be changed -->
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button">
+          <i class="fab link-body-emphasis fa-facebook-square fa-2x text-light"></i>
+        </a>
+
+        <!-- Twitter -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button">
+          <i class="fab link-body-emphasis  fa-twitter fa-2x text-light"></i>
+        </a>
+
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab link-body-emphasis fa-google fa-2x text-light"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab link-body-emphasis fa-instagram fa-2x text-light"></i></a>
+
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab link-body-emphasis fa-linkedin-in fa-2x text-light"></i></a>
+
+        <!-- Github -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i
+            class="fab fa-github fa-2x text-light"></i></a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Text -->
+      <section class="mt-0 mb-5 text-center ">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam eum
+          harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+      <!-- Section: Text -->
+
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row text-center">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6  mb-md-0 mb-2  col-6 ">
+            <h5 class="text-uppercase">Links a</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 1</a>
+              </li>
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 2</a>
+              </li>
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 3</a>
+              </li>
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-md-0  mb-2  col-6 ">
+            <h5 class="text-uppercase">Links b</h5>
+
+            <ul class="list-unstyled ">
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 1</a>
+              </li>
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 2</a>
+              </li>
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 3</a>
+              </li>
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0 col-6 ">
+            <h5 class="text-uppercase">Links c</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 1</a>
+              </li>
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 2</a>
+              </li>
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 3</a>
+              </li>
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 mb-4 col-md-6 mb-md-0 col-6 ">
+            <h5 class="text-uppercase">Links d</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 1</a>
+              </li>
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 2</a>
+              </li>
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white" href="#!">Link 3</a>
+              </li>
+              <li>
+                <a class="link-body-emphasis text-decoration-none text-white " href="#!">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2020 Copyright:
+      <a class="text-reset fw-bold " href="index.html">StudentBucket</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- FOOTER ENDS -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- SCRIPTS STARTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <!-- SCRIPTS ENDS -->
+
+</body>
+
+</html>
